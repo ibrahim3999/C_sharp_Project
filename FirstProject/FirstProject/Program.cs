@@ -23,11 +23,11 @@ namespace Country
             citers.Add(c3);
             citers.Add(c4);
             HelperCity HH = new HelperCity();
-            citers.Sort(HH);
-            citers.ForEach(c => Console.WriteLine(c.getCode()));
+            citers.Sort(HH); 
+            citers.ForEach(c => Console.WriteLine(c.getCode()));//output:1 4 3 2
 
             /* Street  */
-            Street s1 = new Street("hetsel", 1, c1);
+            Street s1 = new Street("hertsel", 1, c1);
             Street s2 = new Street("bazl", 4, c3);
             Street s3 = new Street("Wall street", 6, c4);
             Street s4 = new Street("rom yal", 3, c2);
@@ -40,8 +40,8 @@ namespace Country
             streets.Add(s5);
             HelperStreet AA = new HelperStreet();
             int codeOfTelAviv = c1.getCode();
-            streets.Sort(AA);
-            streets.FindAll(s => s.getCodeOfCity() == codeOfTelAviv).ForEach(c => Console.WriteLine(c.getName()));
+            streets.Sort(AA);//sort getOrderOfPresentationa() tel aviv
+            streets.FindAll(s => s.getCodeOfCity() == codeOfTelAviv).ForEach(c => Console.WriteLine(c.getName()));//output: hertsel bazl
 
 
 
