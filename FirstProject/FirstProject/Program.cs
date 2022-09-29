@@ -24,7 +24,8 @@ namespace Country
             citers.Add(c4);
             HelperCity HH = new HelperCity();
             citers.Sort(HH); 
-            citers.ForEach(c => Console.WriteLine(c.getCode()));//output:1 4 3 2
+            //citers.ForEach(c => Console.WriteLine(c.getCode()));//output:1 4 3 2
+            citers.ForEach(c => Console.WriteLine(c.getName()));
 
             /* Street  */
             Street s1 = new Street("hertsel", 1, c1);
