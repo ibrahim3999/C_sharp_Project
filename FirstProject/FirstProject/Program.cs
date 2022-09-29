@@ -23,7 +23,7 @@ namespace Country
             citers.Add(c3);
             citers.Add(c4);
             HelperCity HH = new HelperCity();
-            citers.Sort(HH); 
+            citers.Sort(HH); // QuickSort algorithm
             //citers.ForEach(c => Console.WriteLine(c.getCode()));//output:1 4 3 2
             citers.ForEach(c => Console.WriteLine(c.getName()));//Tel aviv  New york   Ramat Hashron Hafia
 
@@ -41,7 +41,7 @@ namespace Country
             streets.Add(s5);
             HelperStreet AA = new HelperStreet();
             int codeOfTelAviv = c1.getCode();
-            streets.Sort(AA);//sort getOrderOfPresentationa() tel aviv
+            streets.Sort(AA);//s QuickSort algorithm
             streets.FindAll(s => s.getCodeOfCity() == codeOfTelAviv).ForEach(c => Console.WriteLine(c.getName()));//output: hertsel bazl
 
 
