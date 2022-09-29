@@ -8,6 +8,7 @@
 * HelperStreet
 
 ## interface 
+* IComparer
 
 ##  algorithm
 *  QuickSort algorithm.
