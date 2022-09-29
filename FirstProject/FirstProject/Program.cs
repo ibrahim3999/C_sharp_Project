@@ -12,10 +12,10 @@ namespace Country
         static void Main(string[] args)
         {
 
-            City c1 = new City("Tel Aviv", 1);
-            City c2 = new City("Hafia", 4);
-            City c3 = new City("Ramat Hashron", 3);
-            City c4 = new City("New york", 2);
+            City c1 = new City("Tel Aviv", 1);//code 1
+            City c2 = new City("Hafia", 4);//code 2
+            City c3 = new City("Ramat Hashron", 3);//code 3
+            City c4 = new City("New york", 2);//code 4
 
             List<City> citers = new List<City>();
             citers.Add(c1);
@@ -25,7 +25,7 @@ namespace Country
             HelperCity HH = new HelperCity();
             citers.Sort(HH); 
             //citers.ForEach(c => Console.WriteLine(c.getCode()));//output:1 4 3 2
-            citers.ForEach(c => Console.WriteLine(c.getName()));
+            citers.ForEach(c => Console.WriteLine(c.getName()));//Tel aviv  New york   Ramat Hashron Hafia
 
             /* Street  */
             Street s1 = new Street("hertsel", 1, c1);
